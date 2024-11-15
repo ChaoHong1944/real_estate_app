@@ -1,6 +1,55 @@
-# Getting Started with Create React App
+# NYC Housing Violations App
+
+A web application that allows users to search for addresses in New York City and view any associated housing violations. This project combines the power of the Google Maps API with a custom-built API that processes housing violation data sourced from the NYC Open Data platform.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Features
+
+Address Search: Type in any address in NYC and view detailed information about the property.
+
+Housing Violations: Display violations reported for the searched address using data from the DOB Complaints Received dataset.
+
+Interactive Map: Integrated Google Maps to visualize searched locations with markers and associated property details.
+
+## Technologies Used
+
+### Frontend:
+
+* React.js
+* Google Maps API
+* Axios  (for API requests)
+* Tailwind CSS (for styling)
+
+### Backend:
+
+* Node.js
+* Express.js
+* Custom API for processing NYC Housing Violations dataset
+
+## How it Works
+
+1. Users input an addres into the search bar.
+2. The google Maps API identifies and locate the address, placing a marker on the map.
+3. The application queries the custom API with the address details.
+4. The custom API fetches violation records from the NYC Open Data platform and returns them to the front end
+5. Violations are displayed to the user in a user-friendly format.
+
+## Dataset Details
+
+The dataset used is the DOB Complaints Received, which contains detailed information about housing violations in NYC. Our custom API processes and filters this data to show only the violations relevant to the searched address.
+
+## Key Directories
+
+* Frontend: React application, including Google Maps integration
+* Backend: 
+
+# Contributors:
+
+1. 
+2. 
+3. 
+
 
 ## Available Scripts
 
