@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Address Search: Type in any address in NYC and view detailed information about the property.
 
-Housing Violations: Display violations reported for the searched address using data from the DOB Complaints Received dataset.
+Housing Violations: Display violations reported for the searched address using data from the [DOB Complaints Received dataset.](https://data.cityofnewyork.us/Housing-Development/DOB-Complaints-Received/eabe-havv/about_data)
 
 Interactive Map: Integrated Google Maps to visualize searched locations with markers and associated property details.
 
@@ -32,7 +32,7 @@ Interactive Map: Integrated Google Maps to visualize searched locations with mar
 1. Users input an addres into the search bar.
 2. The google Maps API identifies and locate the address, placing a marker on the map.
 3. The application queries the custom API with the address details.
-4. The custom API fetches violation records from the NYC Open Data platform and returns them to the front end
+4. The custom API fetches violation records from the [NYC Open Data platform](https://data.cityofnewyork.us/Housing-Development/DOB-Complaints-Received/eabe-havv/about_data) and returns them to the front end
 5. Violations are displayed to the user in a user-friendly format.
 
 ## Dataset Details
