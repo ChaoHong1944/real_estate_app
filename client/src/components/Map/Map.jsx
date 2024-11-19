@@ -3,8 +3,10 @@ import GoogleMapReact from 'google-map-react';
 import { useMediaQuery } from '@mui/material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import useStyles from './styles';
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 
 const Map = ({ address }) => {
+
     const classes = useStyles();
     const isMobile = useMediaQuery('(min-width:600px)');
     const [coordinates, setCoordinates] = useState({ lat: 40.7128, lng: -74.0060 }); // Default to NYC
@@ -27,7 +29,7 @@ const Map = ({ address }) => {
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: 'AIzaSyAJJmZEMdvOtBSEC72ImaHUlisQcmeunm8' }}
+                bootstrapURLKeys={{ key: apiKey }}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={14}
