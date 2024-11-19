@@ -213,9 +213,9 @@ Follow the steps below to set up and run the project locally.
 
 ## Top contributors:
 
--
--
--
+- Chao Hong
+- Mamuna Chaudhry
+- Jay Trivedi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
