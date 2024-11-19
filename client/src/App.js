@@ -85,7 +85,7 @@ const App = () => {
                         </div>
                     </Grid>
                     <Grid item xs = {12} md={4}>
-                        <Map />
+                        <Map address={address} /> {/* Pass the address as a prop */}
                     </Grid>
                 </Grid>\
                 <div className="table-container">
