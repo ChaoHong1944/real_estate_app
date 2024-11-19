@@ -17,6 +17,10 @@ const App = () => {
     const [loading, setLoading] = useState(false); // State for loading status
     const [error, setError] = useState(null); // State for error handling
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://127.0.0.1:5000"; // Local fallback
+    const complaintsUrl = `${backendUrl}/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`;
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
@@ -27,7 +31,7 @@ const App = () => {
             return
         }
 
-        axios.get(`/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`)
+        axios.get(complaintsUrl)
             .then((response) => {
                 setComplaints(response.data); // Update state with fetched data
                 setLoading(false);
