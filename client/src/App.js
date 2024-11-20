@@ -19,7 +19,9 @@ const App = () => {
 
     // const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://127.0.0.1:5000"; // Local fallback
     // const complaintsUrl = `${backendUrl}/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`;
-    const complaintsUrl = `/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`;
+    // const complaintsUrl = `/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`;
+    // const complaintsUrl = `https://api-new-murex.vercel.app/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`;
+
 
 
     const handleSubmit = (e) => {
@@ -32,7 +34,7 @@ const App = () => {
             return
         }
 
-        axios.get(complaintsUrl)
+        axios.get(`/api/complaints?address=${address}&zip_code=${zipCode}&bin_number=${binNumber}`)
             .then((response) => {
                 setComplaints(response.data); // Update state with fetched data
                 setLoading(false);

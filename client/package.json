@@ -1,6 +1,7 @@
 {
   "name": "real_estate_app",
   "version": "0.1.0",
+  "proxy": "https://api-new-murex.vercel.app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
